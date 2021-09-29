@@ -1,4 +1,4 @@
-pycaret==1.0.0
+pycaret
 pandas
 numpy==1.20
 streamlit
