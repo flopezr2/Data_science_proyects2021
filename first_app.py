@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 from PIL  import Image
 from pycaret.classification import load_model,predict_model
-modelo=load_model('C:/Users/Admin/OneDrive/Documentos/DataScience2021-2/Trabajos_propios_felipe/Stroke_model_1')
+modelo=load_model('Stroke_model_1')
 
 
 #Funcion de prediccion de base de datos
@@ -15,7 +15,7 @@ def predicciones(modelo,base_datos):
 
 #diseño aplicacion
 def app():
-    imagen=Image.open('C:\\Users\\Admin\\OneDrive\\Documentos\\DataScience2021-2\\Trabajos_propios_felipe\\images.jpg')
+    imagen=Image.open("images.jpg")
     
     st.image(imagen,caption='stroke prediction model',use_column_width=True)
     
