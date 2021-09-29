@@ -1,5 +1,5 @@
 pycaret
 pandas
-numpy 
+numpy==1.20
 streamlit
-nltk
+scikit-learn==0.23.2
