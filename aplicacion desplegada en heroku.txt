@@ -1,0 +1,8 @@
+Hello there.
+It is the first time I deploy a machine learning model on internet through Heroku,
+This model is about stroke predictions based on four features: Age,hypertension,heart_diseas,
+avg_glucose_level. The model  used is a random forest classifier and the feature selection was made 
+after some stadistical test and feature engineering.
+Check out the model on https://strokemodel.herokuapp.com/ and let me know your thoughts.
+
+Thanks!
