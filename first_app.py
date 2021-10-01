@@ -19,8 +19,8 @@ def app():
     
     st.image(imagen,caption='stroke prediction model',use_column_width=True)
     
-    select_box=st.sidebar.selectbox('Tipo de prediccion',{'online'})
-    st.sidebar.info('Stroke prediccions base on Age,hypertension')
+    select_box=st.sidebar.selectbox('Type',{'online'})
+    st.sidebar.info('Stroke predictions base on four features')
     
     #st.title('stroke prediction model')
     st.markdown("<h1 style='text-align: center; color: red;'>stroke prediction model</h1>", unsafe_allow_html=True)
@@ -42,13 +42,13 @@ def app():
        if st.button('Make a prediction'):
            output=predicciones(modelo=modelo,base_datos=base_datos)
            if output==1:
-               output='Posible stroke'
+               output='Possible stroke'
            else:
-               output='No risk to suffer a stroke'
+               output='There is not risk '
                
            
        
-           st.success('la prediccion es :{}'.format(output))
+           st.success('Prediction:{}'.format(output))
 
 if __name__=='__main__':
     app()
